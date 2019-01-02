@@ -1,0 +1,338 @@
+    @font-face {
+    font-family: 'nationalelight';
+    src: url('fonts/nationale-light-webfont.woff2') format('woff2'),
+         url('fonts/nationale-light-webfont.woff') format('woff'),
+		 url('fonts/nationale-light-webfont.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	::-webkit-scrollbar,::-webkit-scrollbar-button, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-corner, ::-webkit-resizer{display: none;}
+
+	body {
+		font-family: 'nationalelight', 'Quicksand';
+		margin: 0;
+		background-color: #1f1f1f;
+	}
+	p {
+		font-family: 'nationalelight', 'Quicksand';
+		color: rgb(227, 131, 127);
+		font-size: 15px;
+	}
+	a {
+		color: #7fdfe3;
+		text-decoration: none;
+	}
+	input[type=text] {
+		color: #7fe383;
+		font-family: 'nationalelight', 'Quicksand';
+		font-size: 15px;
+	}
+	#links {
+		padding-left: 5%;
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+	/* 4CHAN CATEGORY */
+	.chan-cat a {
+		color: #b57fe3 !important;
+	}
+	.chan-cat {
+		border-right: 1px solid #b57fe3;
+	}
+	.chan {
+			cursor: pointer;
+			transition: color 0.5s ease;
+	}
+	.chan:hover {
+		color: #b57fe3 !important;
+	}
+
+	 /* DAILY CATEGORY */
+	.daily-cat a {
+		color: #7fdfe3 !important;
+	}
+	.daily-cat {
+		border-right: 1px solid #7fdfe3;
+		color: #7fdfe3 !important;
+	}
+	.daily {
+		cursor: pointer;
+		transition: color 0.5s ease;
+	}
+	.daily:hover {
+		color: #7fdfe3 !important;
+	}
+
+	/* SCHOOL CATEGORY */
+	.school-cat a {
+		color: #e37fad !important;
+	}
+	.school-cat {
+		border-right: 1px solid #e37fad;
+		color: #e37fad !important;
+	}
+	.school {
+		cursor: pointer;
+		transition: color 0.5s ease;
+	}
+	.school:hover {
+		color: #e37fad !important;
+	}
+
+    /* KOREAN CATEGORY */
+	.kr-cat a {
+		color: #7fe383 !important;
+	}
+	.kr-cat {
+		border-right: 1px solid #7fe383;
+	}
+	.kr {
+		cursor: pointer;
+		transition: color 0.5s ease;
+	}
+	.kr:hover {
+		color: #7fe383 !important;
+	}
+
+	/* STREAM CATEGORY */
+	.stream-cat a {
+		color: #FFFA86 !important;
+	}
+	.stream-cat {
+		border-right: 1px solid #FFFA86;
+	}
+	.stream {
+		cursor: pointer;
+		transition: color 0.5s ease;
+	}
+	.stream:hover {
+		color: #FFFA86 !important;
+	}
+
+	/* GAMES CATEGORY */
+	.games-cat a {
+		color: #e3837f !important;
+	}
+	.games-cat {
+		border-right: 1px solid #e3837f;
+	}
+	.games {
+		cursor: pointer;
+		transition: color 0.5s ease;
+	}
+	.games:hover {
+		color: #e3837f !important;
+	}
+
+	/* MISC CATEGORY */
+	.misc-cat a {
+		color: #e3837f !important;
+	}
+	.misc-cat {
+		border-right: 1px solid #e3837f;
+	}
+	.misc {
+		cursor: pointer;
+		transition: color 0.5s ease;
+	}
+	.misc:hover {
+		color: #e3837f !important;
+	}
+    
+	/* TORRENTS CATEGORY */
+	.weeb-cat a {
+		color: #c0c0c0 !important;
+	}
+	.weeb-cat {
+		border-right: 1px solid #c0c0c0;
+		color: #c0c0c0 !important;
+	}
+	.weeb {
+		cursor: pointer;
+		transition: color 0.5s ease;
+	}
+	.weeb:hover {
+		color: #c0c0c0 !important;
+    }
+    
+	.category {
+		padding-right: 14px;
+		width: 50px;
+		float: left;
+	}
+	.link {
+		margin-right: 14px;
+		color: #e3b57f;
+	}
+	.link.news a {
+		color: #e3b57f;
+	}
+	.link.news a:hover {
+		color: #e37fad !important;
+	}
+	#search-bar {
+    	width: 90%;
+    	border-bottom: 1px solid #7fe383;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		color: #7fe383;
+    	padding: 10px;
+		margin-left: 5%;
+		background-color: transparent;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.fa-gear {
+		cursor: pointer;
+	}
+	.enter {
+		border: 0;
+		border-bottom: 1px solid rgb(227, 131, 127);
+		background-color: transparent;
+    }
+    
+	#top {
+		border: 1px solid rgba(227, 131, 127, 0);
+		background-color: #1f1f1f;
+		height: 130px;
+		width: calc(100% - 2px);
+	}
+	#bottom {
+		background-color: #1F1F1F;
+		height: 69%;
+		width: 100%;
+        padding-top: 60px;
+	}
+	.container-rect {
+		background: transparent;
+		height: auto;
+		width: 700px;
+		border: 1px solid rgb(227, 131, 127);
+		position: relative;
+		top: 38%;
+		margin: 0 auto;
+		
+	}
+	#next-post-news {
+		cursor: pointer;
+		color: #e3b57f;
+	}
+	h1, h2, h3, p {
+		font-family: 'nationalelight', 'Quicksand';
+	}
+	.title {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: white;
+		text-align: center;
+	}
+	#searchbar {
+		background-color: transparent;
+		border: 0;
+		width: 90%;
+		text-align: center;
+	}
+	.settings {
+		width: 300px; 
+		background-color: #1f1f1f;
+		border: 1px solid rgba(227, 131, 127, 0);
+		position: absolute;
+		top: 80px;
+		padding: 1em;
+    }
+    
+    /* DATE / WEATHER (ORIGINALLY 1em)*/
+	.pad-left {
+        display: none !important;
+    }
+    
+    /* REDDIT */
+	.pad-right {
+        padding-left: 1em;
+        display: none !important;
+    }
+    
+    /* TOP BORDERS */
+	.top-left {
+		width: 50%;
+		border-right: 1px solid rgba(227, 131, 127, 0);
+		float: left;
+        height: 100%;
+	}
+	.top-right {
+    	width: calc(50% - 1px);
+    	float: left;
+        height: 100%;
+	}
+	hr {
+		border: 0; 
+		height: 2px; 
+		background-image: linear-gradient(to right, rgba(227, 131, 127, 0), rgba(227, 131, 127, 0.75), rgba(227, 131, 127, 0));
+	}
+	/* radio buttons */
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	label[for="far"], label[for="cel"] {
+		cursor: pointer;
+		border: 1px solid rgba(227, 131, 127, 0);
+		padding: 4px;
+	}	
+	
+	ul li {
+		display: inline;
+		margin-right: 30px;
+	}	
+	
+	ul li input[type=radio]{
+		visibility: hidden;
+		float: left;
+		display: none;
+	}
+
+	ul li .check::before {
+		position: absolute;
+		content: '';
+		border-radius: 100%;
+		height: 15px;
+		width: 15px;
+		top: 5px;
+		left: 5px;
+		margin: auto;
+		transition: background 0.25s linear;
+		-webkit-transition: background 0.25s linear;
+	}
+
+	input[type=radio]:not(:checked) ~ .check {
+		border: 5px solid rgb(227, 131, 127);
+	}
+
+	input[type=radio]:not(:checked) ~ .check::before{
+		background: rgb(227, 131, 127);
+	}
+
+	input[type=radio]:not(:checked) ~ label{
+		color: rgb(227, 131, 127);
+	}	
+	
+	input[type=radio]:checked ~ .check {
+		border: 5px solid #7fdfe3;
+	}
+
+	input[type=radio]:checked ~ .check::before{
+		background: #7fdfe3;
+	}
+
+	input[type=radio]:checked ~ label{
+		color: #7fdfe3;
+		border: 1px solid #7fdfe3;
+	}
