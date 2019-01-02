@@ -1,0 +1,87 @@
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<link rel="shortcut icon" type="image/png" href="src/icons/favicon01.png"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+	<title>New Tab</title>
+</head>
+
+<body>	
+	<div id="bottom">
+		<div class="container-rect">
+			<div id="search">
+				<input id="search-bar" type="text" placeholder="search" />
+				<div id="links">
+					<p class="chan-links">
+						<a href=""><div class="link category chan-cat">4chan</div></a>
+						<a id="chan-link-1" href="https://boards.4channel.org/w/"><span class="link chan chan1">anime wallpapers</span></a>
+						<a id="chan-link-2" href="https://boards.4chan.org/mu/"><span class="link chan chan2">music</span></a>
+						<a id="chan-link-3" href="https://boards.4chan.org/g/"><span class="link chan chan3">technology</span></a>
+						<a id="chan-link-4" href="https://boards.4chan.org/vg/"><span class="link chan chan4">video games</span></a>
+						<a id="chan-link-5" href="https://boards.4chan.org/wg/"><span class="link chan chan5">wallpapers</span></a>
+					</p>
+					<p class="daily-links">
+						<a href=""><div class="link category daily-cat">daily</div></a> 
+						<a id="daily-link-1" href="https://www.youtube.com/"><span class="link daily daily1">youtube</span></a> 
+						<a id="daily-link-2" href="https://www.reddit.com/"><span class="link daily daily2">reddit</span></a> 
+						<a id="daily-link-3" href="https://play.google.com/music/listen?authuser&u=0#/home"><span class="link daily daily3">play music</span></a> 
+						<a id="daily-link-4" href="https://mail.google.com/mail/u/0/#inbox"><span class="link daily daily4">gmail</span></a>
+						<a id="daily-link-5" href="https://github.com/ddeokbokki"><span class="link daily daily5">github</span></a>
+					</p>
+					<p class="kr-links">
+						<a href=""><div class="link category kr-cat">korean</div></a> 
+						<a id="kr-link-1" href="https://ko.dict.naver.com/#/main"><span class="link kr kr1">naver dictionary</span></a> 
+						<a id="kr-link-2" href="https://papago.naver.com/"><span class="link kr kr2">papago</span></a> 
+						<a id="kr-link-3" href="https://koreanverb.app/?search=하다"><span class="link kr kr3">dongsa</span></a>
+						<a id="kr-link-4" href="https://talktomeinkorean.com/curriculum/full"><span class="link kr kr4">ttmik</span></a> 
+					</p>
+					<p class="misc-links">
+						<a href=""><div class="link category misc-cat">misc</div></a> 
+						<a id="misc-link-1" href="https://www.iucu.org/"><span class="link misc misc1">iu credit union</span></a> 
+						<a id="misc-link-2" href="https://www.amazon.com/"><span class="link misc misc2">amazon</span></a>
+						<a id="misc-link-3" href="https://1337x.to/"><span class="link misc misc3">torrent</span></a>
+						<a id="misc-link-4" href="https://alpha.wallhaven.cc/"><span class="link misc misc4">wallhaven</span></a>
+					</p>
+					<p class="school-links">
+						<a href=""><div class="link category school-cat">school</div></a> 
+						<a id="school-link-1" href="https://canvas.iu.edu/lms-prd/app"><span class="link school school1">canvas</span></a>
+						<a id="school-link-2" href="https://one.iu.edu/"><span class="link school school2">oneiu</span></a> 
+						<a id="school-link-3" href="https://app.mystudylife.com/dashboard"><span class="link school school3">mystudylife</span></a> 
+						<a id="school-link-4" href="https://calendar.google.com/calendar/r"><span class="link school school4">calendar</span></a>
+						<a id="school-link-5" href="https://docs.google.com/document/u/0/"><span class="link school school5">docs</span></a>
+						<a id="school-link-6" href="https://docs.google.com/presentation/u/0/"><span class="link school school6">slides</span></a>
+					</p>
+					<p class="stream-links">
+						<a href=""><div class="link category stream-cat">stream</div></a>
+						<a id="stream-link-1" href="https://www.twitch.tv/directory/"><span class="link stream stream1">twitch</span></a>
+						<a id="stream-link-2" href="https://viewasian.tv/country/korea/"><span class="link stream stream2">viewasian</span></a>
+						<a id="stream-link-3" href="https://yesmovies.to/"><span class="link stream stream3">yesmovies</span></a>
+						<a id="stream-link-4" href="https://www.netflix.com/"><span class="link stream stream4">netflix</span></a>
+					</p>
+					<p class="weeb-links">
+						<a href=""><div class="link category weeb-cat">weeb</div></a>
+						<a id="weeb-link-1" href="https://danbooru.donmai.us"><span class="link weeb weeb1">danbooru</span></a>
+						<a id="weeb-link-2" href="https://www.pixiv.net/"><span class="link weeb weeb2">pixiv</span></a>
+						<a id="weeb-link-3" href="https://www.masterani.me/"><span class="link weeb weeb3">masterani</span></a>
+						<a id="weeb-link-4" href="https://mangadex.org/"><span class="link weeb weeb4">mangadex</span></a>
+						<a id="weeb-link-5" href="http://anichart.net/"><span class="link weeb weeb5">anichart</span></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	$(document).ready(function(){
+    $(".container-rect").addClass("animated bounceInUp");	 
+
+    $("#search-bar").keypress(function(event) {
+    var searchQuery = $("#search-bar").val();
+      if ( event.which == 13 ) {
+        window.location.href = 'http://www.google.com/search?q=' + searchQuery;
+      }
+    }); // END Keypress Function			
+	});	
+	</script>
+</body>
