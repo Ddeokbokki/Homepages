@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>♡ Home ♡</title>
+		<link rel="shortcut icon" type="image/png" href="icons/favicon01.png"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+		             $(document).ready(function() {
+				var btn = document.getElementsByClassName('choice');
+				var link = document.getElementsByClassName('button');
+				for(i=0; i<btn.length;i++) {
+					var btn_value = btn[i].options[btn[i].selectedIndex].value;
+					link[i].href = btn_value;
+				};
+		        		var now = new Date();
+				var hour    = now.getHours();
+				var minute  = now.getMinutes();
+				var day = now.getDay();
+				var L = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY","SUNDAY"];
+				if(hour < 10) {
+					hour = "0" + hour;
+				}
+				if (day > 0) {
+					day = day-1;
+				}
+				if (day == 0) {
+					day = 6;
+				}
+				if (minute < 10) {
+					minute = "0" + minute;
+				};
+				document.getElementById("time_box").innerHTML = hour + ":" + minute;
+				document.getElementById("day_box").innerHTML = L[day];
+			});
+		 </script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="banner">
+				<div id="message">
+					<div id="message_box">× Welcome ×</div>
+				</div>
+				<div id="time_box"></div>
+				<div id="day_box"></div>
+			</div>
+	                           <div class="form">
+	                           		<input  id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100"   placeholder="search for inspiration." size="17" autofocus="autofocus" />
+	                         	              <input type="submit" id="image-button" value=""></input>
+	                           </div>
+			<div id="main">
+				<div class="card" style="background-color: #42729B; color: #4387B5;">
+					<a class="button">
+						<img src="avatar/avatar_01.png" class="avatar"></img>
+					</a>
+					<p>Entertainment</p>
+					<select onchange="if (this.value) window.location.href=this.value, this.selected;" class="choice">
+						<option value="https://www.reddit.com/">Reddit</option>
+						<option value="https://www.youtube.com/">Youtube</option>
+						<option value="https://www.twitch.tv/">Twitch</option>
+						<option value="https://www.netflix.com/">Netflix</option>
+						<option value="https://play.google.com/music/listen?authuser&u=0#/home">Play Music</option>
+					</select>
+				</div>
+
+				<div class="card" style="background-color: #FCB941; color: #F0A830;">
+					<a class="button">
+						<img src="avatar/avatar_02.png" class="avatar"></img>
+					</a>
+					<p>University</p>
+					<select onchange="if (this.value) window.location.href=this.value, this.selected;" class="choice">
+						<option value="https://canvas.iu.edu/lms-prd/app">Canvas</option>
+						<option value="https://one.iu.edu/">One IU</option>
+						<option value="https://app.mystudylife.com/dashboard">MyStudyLife</option>
+						<option value="https://web-a-ebscohost-com.proxyiub.uits.iu.edu/ehost/search/basic?vid=0&sid=b49c9c10-5bb7-44bd-b314-f83812726501%40sdc-v-sessmgr02">Library Research</option>
+					</select>
+				</div>
+
+				<div class="card" style="background-color: #F8D9D5; color: #E6567A;">
+					<a class="button">
+						<img src="avatar/avatar_03.png" class="avatar"></img>
+					</a>
+					<p>Personal</p>
+					<select onchange="if (this.value) window.location.href=this.value, this.selected;" class="choice">
+						<option value="https://mail.google.com/mail/u/0/?tab=wm#inbox">Gmail</option>
+						<option value="https://www.iucu.org/">IU Credit Union</option>
+						<option value="https://www.paypal.com/us/signin">PayPal</option>
+					</select>
+				</div>
+
+				<div class="card" style="background-color: #4D545E; color: #4D545E;">
+					<a class="button">
+						<img src="avatar/avatar_04.png" class="avatar"></img>
+					</a>
+					<p>Final Fantasy XIV</p>
+					<select onchange="if (this.value) window.location.href=this.value, this.selected;" class="choice">
+						<option value="https://www.xivmodarchive.com/search/advanced/">Mod Archive</option>
+						<option value="https://www.garlandtools.org/">Garland Tools</option>
+						<option value="https://ermad.github.io/ffxiv-craft-opt-web/app/index.html#/simulator">Crafting Optimizer</option>
+						<option value="https://ffxiv.eorzeacollection.com/">Eorzea Collection</option>
+						<option value="https://mogboard.com/">Mogboard</option>
+						<option value="https://ffxivcrafting.com/equipment">Gear & Leves</option>
+						<option value="https://collect.raelys.com/">Collection</option>
+						<option value="http://en.ff14housing.com/">Housing</option>
+						<option value="http://en.ff14angler.com/">Cat became hungry</option>
+						<option value="https://www.ffxivcollection.com/">Armoury collection</option>
+						<option value="https://www.fflogs.com/character/id/12400932">FFLogs</option>
+						<option value="https://ffxivteamcraft.com/">Teamcraft</option>
+						<option value="http://www.xenoveritas.org/static/ffxiv/timer.html">Maintenance Timer</option>
+						<option value="https://horus-hunts.net/Tracker/Aether">Hunt Tracker</option>
+						<option value="https://www.mooglemedia.com/">The Moogle Post</option>
+						<option value="https://www.aetherflowmedia.com/aetherflow/">Aetherflow Media</option>
+					</select>
+				</div>
+
+				<div class="card" style="background-color: #E26E67; color: #E74C3C;">
+					<a class="button">
+						<img src="avatar/avatar_05.png" class="avatar"></img>
+					</a>
+					<p>Japanese</p>
+					<select onchange="if (this.value) window.location.href=this.value, this.selected;" class="choice">
+						<option value="https://itazuraneko.neocities.org/">Itazuraneko</option>
+						<option value="https://jisho.org/">Jisho</option>
+						<option value="https://danbooru.donmai.us/">Danbooru</option>
+						<option value="https://nhentai.net/language/english/">nHentai</option>
+					</select>
+				</div>
+
+				<div class="card" style="background-color: #64DDBB; color: #2CC990;">
+					<a class="button">
+						<img src="avatar/avatar_06.png" class="avatar"></img>
+					</a>
+					<p>4chan</p>
+					<select onchange="if (this.value) window.location.href=this.value, this.selected;" class="choice">
+						<option value="https://boards.4channel.org/vg/">Video Games</option>
+						<option value="https://boards.4chan.org/wg/">Wallpapers</option>
+						<option value="https://boards.4chan.org/e/">Ecchi</option>
+						<option value="https://boards.4chan.org/h/">Hentai</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/search.js"></script>
+</html>
