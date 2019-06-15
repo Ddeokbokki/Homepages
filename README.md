@@ -3,3 +3,6 @@ Homepages that I have amassed over the years. None of them have been created spe
 
 # Devola
 ![preview_devola.png](https://raw.githubusercontent.com/Ddeokbokki/Homepages/master/Devola/preview_devola.png)
+
+# Minimal
+![preview_minimal.png](https://raw.githubusercontent.com/Ddeokbokki/Homepages/master/Minimal/preview_minimal.png)
