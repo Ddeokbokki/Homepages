@@ -6,3 +6,6 @@ Homepages that I have amassed over the years. None of them have been created spe
 
 # Minimal
 ![preview_minimal.png](https://raw.githubusercontent.com/Ddeokbokki/Homepages/master/Minimal/preview_minimal.png)
+
+# Mood
+![preview_minimal.png](https://raw.githubusercontent.com/Ddeokbokki/Homepages/master/Mood/preview_mood.png)
